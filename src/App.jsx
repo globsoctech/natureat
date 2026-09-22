@@ -1,6 +1,7 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
+import Gate from "./components/Gate.jsx";
 import Home from "./pages/Home.jsx";
 import Catalog from "./pages/Catalog.jsx";
 import Product from "./pages/Product.jsx";
@@ -21,7 +22,7 @@ function ScrollTop() {
 
 export default function App() {
   return (
-    <>
+    <Gate>
       <ScrollTop />
       <Header />
       <main>
@@ -37,6 +38,6 @@ export default function App() {
         </Routes>
       </main>
       <Footer />
-    </>
+    </Gate>
   );
 }

@@ -707,3 +707,62 @@ h3,
     scroll-behavior: auto;
   }
 }
+
+.gate {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background:
+    linear-gradient(160deg, rgba(18, 26, 19, 0.92), rgba(18, 26, 19, 0.78)),
+    url(/hero.png) center/cover no-repeat;
+  color: var(--paper);
+}
+
+.gate__panel {
+  width: min(380px, 100%);
+  display: grid;
+  gap: 12px;
+  padding: 32px 28px;
+  background: rgba(236, 231, 220, 0.96);
+  color: var(--ink);
+  border-radius: 2px;
+}
+
+.gate__panel img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.gate__panel h1 {
+  margin: 4px 0 0;
+  font-size: 32px;
+}
+
+.gate__panel p {
+  margin: 0;
+  color: var(--mute);
+}
+
+.gate__panel label {
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.gate__panel input {
+  height: 46px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  background: #fff;
+  letter-spacing: 0.2em;
+}
+
+.gate__error {
+  color: var(--kalamata) !important;
+  font-size: 14px;
+}
